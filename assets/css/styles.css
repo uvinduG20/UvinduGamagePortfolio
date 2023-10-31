@@ -715,6 +715,10 @@ img {
   justify-self: center;
 }
 
+.portfolio__space{
+  visibility: hidden;
+}
+
 .portfolio__title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-5);
