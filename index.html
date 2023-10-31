@@ -11,7 +11,7 @@
     />
 
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -667,7 +667,79 @@
       </section>
 
       <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio"></section>
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">My most recent work</span>  
+
+        <div class="portfolio__container container swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Portfolio 1 -->
+                <div class="portfolio__content grids swiper-slide">
+                
+                    <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">PillPal - UI Designing</h3>
+                        <p class="portfolio__description">
+                            A mobile medication reminder app fostering adherence among elderly, busy users, and individuals with disabilities. Led research, UI design, prototyping, and usability testing for client delivery.
+                        </p>
+
+                    <a href="https://www.figma.com/file/kOkxsIINf4W6ewGhcjKS5q/Final-PillPal-after-Userbility-Testing?type=design&node-id=0%3A1&mode=design&t=wGu6L7IWvDX8kMPj-1" target="_blank" class="button button--flex button--small portfolio__button">
+                        Open in Figma
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>    
+                    
+                    </div>
+                </div>
+
+                <!-- Portfolio 2 -->
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">TYCHE LK - Logo Design</h3>
+                        <p class="portfolio__description">
+                            Logo designing done for TYCHE LK, which is a registered digital and social media marketing company with marketing on Facebook, Instagram and TikTok.
+                        </p>
+
+                    <a href="https://dribbble.com/shots/22935300-TYCHE-LK-Logo-and-Social-Media-Marketing" target="_blank" class="button button--flex button--small portfolio__button">
+                        View in Dribbble
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>    
+                    
+                    </div>
+                </div>
+
+                <!-- Portfolio 3 -->
+                <div class="portfolio__content grid swiper-slide">
+                    <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">TYCHE LK - Social Media Posts</h3>
+                        <p class="portfolio__description">
+                            Full on graphic designing solution given to TYCHE LK with posts created from Adobe Photoshop and Illustrator to post on social media platforms such as Facebook, Instagram, X.
+                        </p>
+
+                    <a href="https://www.instagram.com/tyche.lk/" target="_blank" class="button button--flex button--small portfolio__button">
+                        Go to Instagram
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>    
+                    
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
       <!--==================== PROJECT IN MIND ====================-->
       <section class="project section"></section>
@@ -685,7 +757,7 @@
     <!--==================== SCROLL TOP ====================-->
 
     <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
