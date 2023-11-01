@@ -1021,7 +1021,8 @@ img {
 }
 
 ::-webkit-scrollbar-thumb:hover{
-  background-color: var(--text-color-light);
+  background-color: var(--text-color-light); 
+  /* when hovering */
 }
 
 /*==================== MEDIA QUERIES ====================*/
