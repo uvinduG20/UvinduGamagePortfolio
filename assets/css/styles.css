@@ -70,10 +70,35 @@
 }
 
 /*========== Variables Dark theme ==========*/
+body.dark-theme{
+  /* HSL color mode */
 
+  --first-color-second: hsl(var(--hue-color), 30%, 8%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --container-color: hsl(var(--hue-color), 28%, 12%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+}
 
 /*========== Button Dark/Light ==========*/
+.nav__btns{
+  display: flex;
+  align-items: center;
+}
 
+.change-theme{
+  font-size: 1.1rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.change-theme:hover{
+  color: var(--first-color);
+}
 
 /*==================== BASE ====================*/
 * {
@@ -658,7 +683,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.475);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -709,6 +734,7 @@ img {
 .active__modal{
   opacity: 1;
   visibility: visible;
+  
 }
 
 
