@@ -126,6 +126,29 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
     }
 });
 
+/*==================== SEND MESSAGE ====================*/ 
+function sendMessage(){
+    (function(){
+        emailjs.init("panWQDXF2b-Pl4o6m");
+    })();
+
+    var serviceId = "service_0r0kjxj";
+    var templateId ="template_wdyxeim";
+
+    var params = {
+        sendername: document.querySelector("#contactName").value,
+        senderemail: document.querySelector("#contactEmail").value,
+        senderproject: document.querySelector("#contactProject").value,
+        sendermessage: document.querySelector("#contactMessage").value
+    };
+
+    emailjs.send(serviceId,templateId,params)
+    .then( res => {
+        alert('Thank You ,' + params(sendername) + "! Your message was sent.");
+    })
+    .catch();
+}
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
